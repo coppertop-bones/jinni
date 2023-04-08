@@ -20,8 +20,6 @@ VARTYPE vartype(VARIANT *x) {
     return x->vt;
 }
 
-
-
 VARIANT doubleInVar(double x) {
     VARIANT answer;
     answer.vt = VT_R8;
@@ -30,7 +28,6 @@ VARIANT doubleInVar(double x) {
 }
 
 VARIANT doubleArrayInVar(double x, int count) {
-    VARIANT answer;
     int ndims = 1;
 
     void *p = malloc(sizeof(FULLSAFEARRAY) + (ndims - 1) * sizeof(SAFEARRAYBOUND));
@@ -49,10 +46,12 @@ VARIANT doubleArrayInVar(double x, int count) {
         elements[i] = x;
     }
 
+    VARIANT answer;
     answer.vt = VT_ARRAY | VT_R8;
     answer.data.parray = p + 16;
     return answer;
 }
+
 
 VARIANT errorInVar(int32_t x) {
     VARIANT answer;

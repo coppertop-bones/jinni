@@ -82,3 +82,11 @@ The -dynamiclib option, on the other hand, is specific to macOS and is used to c
 In general, if you are creating a shared library that you want to use on multiple platforms, including macOS and Linux, you should use the -shared option. If you are creating a shared library that is specific to macOS and you want to load it dynamically using dlopen, you should use the -dynamiclib option.
 
 
+
+https://github.com/wine-mirror/wine \
+https://github.com/wine-mirror/wine/blob/master/dlls/oleaut32/tests/safearray.c \
+https://wiki.winehq.org/Download \
+https://gitlab.winehq.org/wine/wine \
+https://stackoverflow.com/questions/18784470/where-is-safearray-var-type-stored
+
+
