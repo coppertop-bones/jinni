@@ -1,2 +1,2 @@
 # jinni
-The idea is to help call c from Excel - named after rainbow jinni sprinkles.
+Helpers for calling c from Excel - named after rainbow jinni sprinkles.
